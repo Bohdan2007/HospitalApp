@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додати нового лікаря"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Прізвище Ім'я По батькові"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etSpecialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Спеціалізація "
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Стаж роботи "
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Номер телефону"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etCabinetNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Номер кабінету"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#757575"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оберіть графік роботи:"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnSaveDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Зберегти в базу"
+            android:textSize="18sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="10dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Назад"
+            android:textSize="18sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
